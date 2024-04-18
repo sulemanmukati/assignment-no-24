@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>assigment 24</title>
+</head>
+<body>
+    
+                 <!--Q1 -->
+    <h2>Signup Form</h2>
+    <form id="signupForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3>Submitted Data:</h3>
+    <div id="result"></div>
+
+
+
+
+                 <!--Q2 -->
+    <h2>Item Details</h2>
+    <p>
+        This is a basic item description.....
+        <span id="more">Here are the full details of the item.</span>
+    </p>
+    <button id="readMoreBtn">Read more</button>
+<br><br>
+
+
+
+
+
+
+                 <!--Q3 -->
+    <form id="studentForm">
+        <label for="studentName">Name:</label>
+        <input type="text" id="studentName" required>
+        <br><br>
+        <label for="studentAge">Age:</label>
+        <input type="number" id="studentAge" required>
+        <br><br>
+        <button type="button" onclick="addStudent()">Add Student</button>
+    </form>
+    <div id="editForm" style="display:none;">
+        <h2>Edit Student</h2>
+        <form>
+            <label for="editName">Name:</label>
+            <input type="text" id="editName" required>
+            <br><br>
+            <label for="editAge">Age:</label>
+            <input type="number" id="editAge" required>
+            <br><br>
+            <button type="button" onclick="saveEdit()">Save Changes</button>
+            <button type="button" onclick="cancelEdit()">Cancel</button>
+        </form>
+    </div>
+    <h3>Students List:</h3>
+    <table id="studentsTable" border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+<br> <br>
+    
+
+
+
+
+
+
+
+<!--Q1 -->
+
+
+    <a href="#" onclick="showAlert(); return false;">Click here for an alert!</a><br><br>
+
+
+<!--Q2 -->
+<h1>mobile phone lookup</h1>
+    <img src="mobile1.png" alt="Mobile 1" onclick="showMessage('Mobile 1')" style="width: 80px; height:auto;">
+    <img  src="mobile2.png" alt="Mobile 2" onclick="showMessage('Mobile 2')" style="width:100px; height:auto;">
+    <img src="mobile3.png" alt="Mobile 3" onclick="showMessage('Mobile 3')" style="width:90px; height:auto;">
+
+
+<!--Q3 -->
+
+<table id="studentTable" border="1">
+    <thead>
+        <tr>
+            <th>index</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+<br><br>
+
+<!--Q4 -->
+    <img src="default.jpg" alt="Default Image"
+    onmouseover="this.src='mouseover.jpg';"
+    onmouseout="this.src='default.jpg';"
+    style="width:200px; height: 150px;;">
+
+
+    <!--Q5 -->
+ <div>Counter: <span id="count">0</span></div>
+    <button onclick="changeCounter(-1)">Decrease</button>
+    <button onclick="changeCounter(1)">Increase</button>
+    
+    <script src="app.js"></script>
+</body>
+</html>
